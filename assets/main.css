@@ -1,0 +1,13 @@
+.dash-list{
+    margin: 0;
+    padding: 0;
+}
+
+.dash{
+    border-bottom: 2px solid black;
+    margin-right: 2px;
+    width:35px;
+    text-align: center;
+    font-size: 30px;
+    display: inline-block;
+}
