@@ -1,6 +1,59 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata:400,700|Roboto+Condensed:300,400,700');
+
+body{
+    text-align: center;
+    background: url("images/code.jpg");
+    font-family: "Roboto Condensed";
+    font-weight: 300;
+}
+
+h3, h4{
+    font-weight: 300;
+}
+
+.game-body{
+    background-color: white;
+    border-radius: 8px;
+    display:  inline-block;
+    margin: 100px auto;
+    padding-bottom: 40px;
+    border: 2px solid #000d2c;
+    width: 50%;
+}
+
+.game-body .status{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    color: white;
+    font-size: 11px;
+    text-transform: uppercase;
+    display: none;
+}
+
+.game-body .status.success{
+    background-color: #004200;
+    display: block;
+}
+
+.game-body .status.failure{
+    background-color: #b90202;
+    display: block;    
+}
+
+.game-body .status em{
+    font-family: Inconsolata;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 14px;
+    text-transform: lowercase;
+}
+
 .dash-list{
-    margin: 0;
     padding: 0;
+    margin: 25px auto;
+    display: inline-block;
 }
 
 .dash{
@@ -8,6 +61,72 @@
     margin-right: 2px;
     width:35px;
     text-align: center;
-    font-size: 30px;
+    font-size: 24px;
     display: inline-block;
+    vertical-align: top;
+    height: 35px;
+    font-family: Inconsolata;
+    font-weight: 400;
+}
+
+.play-again-btn{
+    margin-top: 40px;
+    background-color: #01a8c3;
+    color: white;
+    border: 1px solid #777;
+    border-bottom: 3px solid #777;
+    border-radius: 4px;
+    font-size: 18px;
+    padding: 12px 16px;
+    font-weight: 700;
+    font-family: Inconsolata;
+    text-transform: uppercase;
+    cursor: pointer;
+    letter-spacing: 3px;
+    text-shadow: 0px 1px #bbbaba;
+    transition: all .5s ease;
+}
+
+.play-again-btn:hover{
+    background-color: white;
+    color: black;
+    border-color: black;
+}
+
+.you-guessed-list{
+    margin: 0;
+    padding: 0;
+}
+
+.player-guess{
+    font-size: 14px;
+    border: 1px solid #444;
+    list-style-type: none;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    margin-right: 4px;
+    line-height: 25px;
+    background-color: #333;
+    color: white;
+    border-radius: 4px;
+    font-family: Inconsolata;
+    font-weight: normal;
+}
+
+.loser{
+    border: 1px solid red;
+    padding: 12px 10px;
+    list-style-type: none;
+    border-radius: 4px;
+    margin-top: 20px;
+    background-color: #ffcaca;
+    font-weight: 300;
+    font-size: 14px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.loser em {
+    font-weight: 700;
 }
